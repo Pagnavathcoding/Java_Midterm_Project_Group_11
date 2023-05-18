@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Product_managment</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+        <form method="get" action="/sale" class="container border border-black absolute top-1/4 left-1/3 transform -translate-x-1/4 -translate-y-1/4 bg-gray-200 h-[450px] text-lg md:w-full lg:w-1/2 lg:w-fit">
+                <h1 class="m-2  pl-2 text-lg font-semibold">New Drinks</h1>
+                <div  class="m-2 p-2 border-t border-black flex gap-40 pl-5 ">
+                        <div class="">
+                                <div>
+                                        <label for="text">Drinks code: </label>
+                                        <input type="text" name="drinkcode" id="" class="input border border-black m-2 ml-10">
+                                </div>
+                                <div>
+                                        <label for="text">Drinks name: </label>
+                                        <input type="text" name="drinksname" id="" class="input border border-black m-2 ml-9">
+                                </div>
+                                <div>
+                                        <label for="text">Category: </label>
+                                        <select id="" name="Sex" class="w-[210px] text-center border border-black m-2 ml-[65px]">
+                                                <option value="hotdrink">Hot Drinks</option>
+                                                <option value="cooldrink">Cold Drink</option>
+                                                <option value="other">others</option>
+                                        </select>
+                                </div>
+                                <div>
+                                        <label for="price">Price: </label>
+                                        <input type="value" id="" name="price"class="input border border-black m-2 ml-[95px]">
+                                </div>
+                                <div>
+                                        <label for="note">Note: </label>
+                                        <input type="text" name="" id=""class="h-[100px] input border border-black m-2 ml-[90px]">
+                                </div>
+                                <div class="button m-3 ">
+                                        <button class="border-2 border-black w-[180px] rounded-lg bg-teal-300" ><a href="./Sale.html"></a> OK</button>
+                                        <button class="border-2 border-black w-[90px] rounded-lg bg-teal-300" >Cancel</button>
+                                </div>
+                        </div>
+                        
+                        <img src="cashier.png" alt="cashier" width="30%" >
+                </div>
+        </form>
+
+        <script>
+                function adddnew(){
+                        location.href = "./Sale.html";
+                }
+        </script>
+</body>
+</html>
